@@ -1,0 +1,43 @@
+@import './base.css';
+
+@keyframes bannerMove {
+  from {
+    opacity: 0;
+    scale: 0.7;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.home {
+  padding: 1rem;
+
+  & .banner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    animation: bannerMove 300ms ease-in;
+
+    & .logo {
+      inline-size: 18rem;
+      block-size: 18rem;
+
+      margin: 2rem 0;
+
+      background-image: url(./studioIntegrarLogo.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    & .intro {
+      & h1 {
+        text-align: center;
+      }
+      & p {
+        text-align: center;
+      }
+    }
+  }
+}

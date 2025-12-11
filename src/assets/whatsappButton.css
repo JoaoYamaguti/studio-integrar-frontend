@@ -1,0 +1,18 @@
+@import './base.css';
+
+.whatsappButton {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+
+  inline-size: 5rem;
+  block-size: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & i {
+    scale: 3;
+  }
+}
