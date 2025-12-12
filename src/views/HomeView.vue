@@ -9,7 +9,10 @@
         <p></p>
       </div>
     </div>
-    <div class="buttons"></div>
+    <div class="buttons">
+      <a href="/about">Sobre nós & Produtos</a>
+      <a href="/schedule">Agendamento</a>
+    </div>
   </main>
 </template>
 
