@@ -1,0 +1,130 @@
+@import url(base.css);
+
+header {
+  position: sticky;
+  inline-size: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  & .logo {
+    inline-size: 5rem;
+    block-size: 5rem;
+
+    background-image: url(./studioIntegrarLogo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 300ms;
+  }
+  & .logo:hover {
+    scale: 1.1;
+  }
+}
+
+.mobileMenuIcon {
+  display: block;
+  color: var(--color-heading);
+  cursor: pointer;
+
+  & label {
+    cursor: pointer;
+    & div {
+      margin: 0.3rem 0;
+      inline-size: 2rem;
+      block-size: 0.3rem;
+      background-color: var(--color-heading);
+      transition: all 200ms;
+    }
+  }
+  &:hover {
+    color: var(--color-accent);
+  }
+  & input {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  inline-size: 100vw;
+  background-color: var(--color-background-soft);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  border-start-start-radius: 18px;
+  border-start-end-radius: 18px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+
+  padding: 1rem;
+  z-index: 1000;
+
+  transform: translateY(100%);
+  transition: all 200ms ease-in-out;
+
+  & li {
+    padding: 1rem 0;
+    & a {
+      inline-size: 100%;
+      font-size: calc(1.2rem + 0.3vw);
+      color: var(--color-heading);
+    }
+
+    & a:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+#mobileMenuIcon:checked ~ .firstBar {
+  transform: rotate(45deg) translate(7px, 6px);
+}
+#mobileMenuIcon:checked ~ .secondBar {
+  opacity: 0;
+}
+#mobileMenuIcon:checked ~ .thirdBar {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+#mobileMenuIcon:checked ~ ul.mobileMenu {
+  transform: translateY(0%);
+}
+
+.desktopMenu {
+  display: none;
+  flex-flow: row nowrap;
+
+  & li {
+    & a {
+      border-right: solid 1px var(--color-border);
+      padding: 0 1rem;
+
+      /* font-size: 1.3rem; */
+      font-size: calc(1rem + 0.3vw);
+      color: var(--color-heading);
+    }
+
+    & a:hover {
+      color: var(--color-accent);
+    }
+  }
+  & li:last-child {
+    & a {
+      border-right: none;
+    }
+  }
+}
+
+@media (width >= 48rem) {
+  /* width >= 768px */
+  .mobileMenuIcon,
+  .mobileMenu {
+    display: none;
+  }
+  .desktopMenu {
+    display: flex;
+  }
+}

@@ -1,4 +1,4 @@
-@import './base.css';
+@import url(base.css);
 
 .container {
   inline-size: 100%;
@@ -9,7 +9,32 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-  padding: 3px;
+}
+
+@media (width >= 48rem) {
+  /* width >= 768px */
+  .container {
+    /* inline-size: 100%; */
+    max-inline-size: 64rem;
+    margin: auto;
+  }
+}
+
+@media (width >= 64rem) {
+  /* width >= 1024px */
+  .container {
+    /* inline-size: 100%; */
+    max-inline-size: 80rem;
+    margin: auto;
+  }
+}
+
+@media (width >= 80rem) {
+  /* width >= 1536px */
+  .container {
+    /* inline-size: 100%; */
+    max-inline-size: 96rem;
+    margin: auto;
+  }
 }

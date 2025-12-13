@@ -41,6 +41,8 @@
   --section-gap: 160px;
 
   --font-great-vibes: normal 400 3.2rem 'Great Vibes', cursive;
+
+  --color-border: var(--vt-c-black-mute);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +56,8 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --color-border: var(--vt-c-white-mute);
   }
 }
 
@@ -89,4 +93,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
 }

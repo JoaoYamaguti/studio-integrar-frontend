@@ -14,5 +14,6 @@
   justify-content: center;
   & i {
     scale: 3;
+    color: hsla(160, 100%, 37%, 1);
   }
 }

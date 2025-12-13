@@ -1,4 +1,4 @@
-@import './base.css';
+@import url(base.css);
 
 @keyframes bannerMove {
   from {
@@ -20,7 +20,6 @@
   gap: 2rem;
 
   & .banner {
-    margin-top: 2rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -30,6 +29,7 @@
     & .logo {
       inline-size: 18rem;
       block-size: 18rem;
+      margin: auto;
 
       background-image: url(./studioIntegrarLogo.png);
       background-position: center center;
@@ -37,12 +37,17 @@
       background-size: contain;
     }
     & .intro {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
+
       & h1 {
+        font-size: calc(1.8rem + 0.3vw);
         text-align: center;
-        font: var(--font-great-vibes);
+        /* font: var(--font-great-vibes); */
       }
       & p {
-        text-align: center;
+        font-size: calc(1rem + 0.3vw);
       }
     }
   }
@@ -63,7 +68,36 @@
       text-align: center;
 
       color: var(--color-heading);
-      font-size: calc(1rem + 1.5vw);
+      font-size: calc(1rem + 0.3vw);
+    }
+  }
+}
+
+@media (width >= 48rem) {
+  /* width >= 768px */
+  .home {
+    & .banner {
+      margin-top: 0;
+
+      & .intro {
+        text-align: start;
+      }
+    }
+    & .buttons {
+      & a {
+        font-size: calc(0.7rem + 1vw);
+      }
+    }
+  }
+}
+
+@media (width >= 80rem) {
+  /* width >= 1536px */
+  .home {
+    & .buttons {
+      & a {
+        font-size: calc(0.7rem + 1vw);
+      }
     }
   }
 }
