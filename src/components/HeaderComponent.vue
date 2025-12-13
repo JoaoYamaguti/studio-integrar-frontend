@@ -10,6 +10,7 @@ const showMobileMenu = ref(false)
       <div class="logo"></div>
     </a>
     <ul class="desktopMenu">
+      <li><a href="/about">Sobre Nós</a></li>
       <li><a href="/procedures">Procedimentos</a></li>
       <li><a href="/schedule">Agendamento</a></li>
     </ul>
@@ -20,8 +21,18 @@ const showMobileMenu = ref(false)
         <div class="secondBar"></div>
         <div class="thirdBar"></div>
         <ul class="mobileMenu container">
-          <li><a href="/procedures">Procedimentos</a></li>
-          <li><a href="/schedule">Agendamento</a></li>
+          <li>
+            <a href="/about"><i class="pi pi-briefcase"></i> Sobre Nós</a>
+          </li>
+          <li>
+            <a href="/procedures"><i class="pi pi-wave-pulse"></i> Procedimentos</a>
+          </li>
+          <li>
+            <a href="/schedule"><i class="pi pi-calendar"></i> Agendamento</a>
+          </li>
+          <li>
+            <a href="/schedule"><i class="pi pi-whatsapp"></i> Contato</a>
+          </li>
         </ul>
       </label>
     </div>

@@ -19,12 +19,12 @@
   align-items: center;
   gap: 2rem;
 
+  animation: bannerMove 300ms ease-in;
   & .banner {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     gap: 2rem;
-    animation: bannerMove 300ms ease-in;
 
     & .logo {
       inline-size: 18rem;
@@ -42,17 +42,40 @@
       gap: 1rem;
 
       & h1 {
+        color: var(--color-primary);
         font-size: calc(1.8rem + 0.3vw);
         text-align: center;
         /* font: var(--font-great-vibes); */
       }
       & p {
+        color: var(--color-heading);
         font-size: calc(1rem + 0.3vw);
       }
     }
   }
 
-  .buttons {
+  & aside {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & .operation {
+    & h2 {
+      color: var(--color-primary);
+      font-size: calc(1.5rem + 0.3vw);
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+    & p {
+      color: var(--color-heading);
+      font-size: calc(1rem + 0.3vw);
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .buttons {
     inline-size: 100%;
 
     display: flex;
@@ -63,12 +86,15 @@
       border-radius: 6px;
       padding: 0.5rem;
 
-      background-color: var(--color-accent);
+      background-color: var(--color-secondary);
       inline-size: 100%;
       text-align: center;
 
       color: var(--color-heading);
       font-size: calc(1rem + 0.3vw);
+    }
+    & a:hover {
+      background-color: var(--color-secondary-dark);
     }
   }
 }
@@ -80,12 +106,21 @@
       margin-top: 0;
 
       & .intro {
-        text-align: start;
+        & h1 {
+          text-align: start;
+        }
       }
     }
+    & aside {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
     & .buttons {
       & a {
-        font-size: calc(0.7rem + 1vw);
+        font-size: calc(0.5rem + 1vw);
       }
     }
   }
@@ -96,7 +131,7 @@
   .home {
     & .buttons {
       & a {
-        font-size: calc(0.7rem + 1vw);
+        font-size: calc(0.5rem + 1vw);
       }
     }
   }

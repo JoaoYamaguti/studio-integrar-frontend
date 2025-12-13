@@ -17,10 +17,19 @@
         </p>
       </div>
     </div>
-    <div class="buttons">
-      <a href="/about">Procedimentos</a>
-      <a href="/schedule">Agendamento</a>
-    </div>
+    <aside>
+      <div class="oparation">
+        <h2>Operações</h2>
+        <p>
+          Nosso studio funciona de segunda a sexta-feira, das 19h às 23h. Agendamentos são feitos
+          com antecedência, garantindo um atendimento personalizado e dedicado a cada cliente.
+        </p>
+      </div>
+      <div class="buttons">
+        <a href="/about">Procedimentos</a>
+        <a href="/schedule">Agendamento</a>
+      </div>
+    </aside>
   </main>
 </template>
 

@@ -2,7 +2,7 @@
 
 .container {
   inline-size: 100%;
-  max-inline-size: 40rem;
+  /* max-inline-size: 40rem; */
   margin: auto;
 }
 
@@ -16,7 +16,8 @@ a,
   /* width >= 768px */
   .container {
     /* inline-size: 100%; */
-    max-inline-size: 64rem;
+    /* max-inline-size: 64rem; */
+    max-inline-size: 40rem;
     margin: auto;
   }
 }
@@ -25,7 +26,8 @@ a,
   /* width >= 1024px */
   .container {
     /* inline-size: 100%; */
-    max-inline-size: 80rem;
+    /* max-inline-size: 80rem; */
+    max-inline-size: 48rem;
     margin: auto;
   }
 }
@@ -34,7 +36,18 @@ a,
   /* width >= 1536px */
   .container {
     /* inline-size: 100%; */
-    max-inline-size: 96rem;
+    /* max-inline-size: 96rem; */
+    max-inline-size: 64rem;
+    margin: auto;
+  }
+}
+
+@media (width >= 96rem) {
+  /* width >= 1536px */
+  .container {
+    /* inline-size: 100%; */
+    /* max-inline-size: 96rem; */
+    max-inline-size: 80rem;
     margin: auto;
   }
 }
