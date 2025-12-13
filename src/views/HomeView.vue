@@ -17,9 +17,9 @@
         </p>
       </div>
     </div>
-    <aside>
-      <div class="oparation">
-        <h2>Operações</h2>
+    <div class="operation">
+      <div class="infos">
+        <h2>Horarios de Atendimento</h2>
         <p>
           Nosso studio funciona de segunda a sexta-feira, das 19h às 23h. Agendamentos são feitos
           com antecedência, garantindo um atendimento personalizado e dedicado a cada cliente.
@@ -29,7 +29,20 @@
         <a href="/about">Procedimentos</a>
         <a href="/schedule">Agendamento</a>
       </div>
-    </aside>
+    </div>
+    <div class="location">
+      <div class="infos">
+        <h3>Endereço</h3>
+        <p>R. Fioravante Lopes Garcia, 544 - Jardim Belem, São Paulo - SP, 03811-000, Brasil</p>
+        <h3>Telefone</h3>
+        <p>(11) 98239-5870</p>
+      </div>
+      <!-- <div class="maps">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur dolor
+        laboriosam maiores beatae fugit molestias. Aliquid, repellendus tempora cum commodi
+        molestias excepturi doloremque animi facere, accusamus quaerat, vero perspiciatis?
+      </div> -->
+    </div>
   </main>
 </template>
 
