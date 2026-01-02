@@ -46,4 +46,4 @@
   </main>
 </template>
 
-<style src="../assets/home.css"></style>
+<style lang="scss" src="./home.scss"></style>

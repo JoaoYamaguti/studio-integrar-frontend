@@ -1,21 +1,18 @@
-@import url(base.css);
+@use '../../assets/base.scss';
 
 header {
   position: sticky;
   top: 0;
   inline-size: 100%;
+  block-size: 7rem;
   border-bottom: solid 1px var(--color-background-soft);
   padding: 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-background);
+  background-color: var(--color-background-soft);
   & .logo {
     inline-size: 5rem;
     block-size: 5rem;
 
-    background-image: url(./studioIntegrarLogo.png);
+    background-image: url(../../assets/img/studioIntegrarLogo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -23,6 +20,15 @@ header {
   }
   & .logo:hover {
     scale: 1.1;
+  }
+
+  & div.container {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -51,28 +57,34 @@ header {
 
 .mobileMenu {
   position: fixed;
-  left: 0;
-  bottom: 0;
-  inline-size: 100vw;
+  right: 0;
+  top: 7rem;
+  inline-size: 65vw;
+  block-size: calc(100vh - 7rem);
   background-color: var(--color-background-soft);
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
-  border-start-start-radius: 18px;
-  border-start-end-radius: 18px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+
+  /* border-start-start-radius: 18px;
+  border-start-end-radius: 18px; */
 
   display: flex;
   flex-flow: column nowrap;
-  justify-content: start;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
 
   padding: 1rem;
   z-index: 1000;
 
-  transform: translateY(100%);
+  transform: translateX(100%);
   transition: transform 200ms ease-in-out;
+  transition: box-shadow 300ms forwards;
 
   & li {
-    padding: 1rem 0;
     & a {
       inline-size: 100%;
+      border-bottom: solid 1px var(--color-border);
+      padding: 0.5rem;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -83,6 +95,11 @@ header {
 
     & a:hover {
       color: var(--color-accent);
+    }
+    &:last-child {
+      flex: 1 0 0;
+      display: flex;
+      align-items: flex-end;
     }
   }
 }
@@ -97,7 +114,8 @@ header {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 #mobileMenuIcon:checked ~ ul.mobileMenu {
-  transform: translateY(0%);
+  transform: translateX(0%);
+  box-shadow: -150px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .desktopMenu {

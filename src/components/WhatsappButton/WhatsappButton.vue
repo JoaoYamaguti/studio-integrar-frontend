@@ -8,4 +8,4 @@
   </div>
 </template>
 
-<style src="../assets/whatsappButton.css"></style>
+<style lang="scss" src="./whatsappButton.scss"></style>

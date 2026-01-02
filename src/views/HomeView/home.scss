@@ -1,4 +1,4 @@
-@import url(base.css);
+@use '../../assets/base.scss';
 
 @keyframes bannerMove {
   from {
@@ -120,11 +120,11 @@
     }
   }
 
-  & .maps {
-    /* max-inline-size: 50%; */
+  /* & .maps {
+    /* max-inline-size: 50%;
     flex: 1 0 0;
-    /* block-size: 8%; */
-  }
+    /* block-size: 8%;
+  } */
 }
 
 @media (width >= 48rem) {

@@ -4,4 +4,4 @@
   <main class="procedures"></main>
 </template>
 
-<style src="../assets/procedures.css"></style>
+<style lang="scss" src="./procedures.scss"></style>

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import WhatsappButton from './components/WhatsappButton.vue'
-import HeaderComponent from './components/HeaderComponent.vue'
+import WhatsappButton from './components/WhatsappButton/WhatsappButton.vue'
+import HeaderComponent from './components/HeaderComponent/HeaderComponent.vue'
 </script>
 
 <template>
+  <HeaderComponent />
   <div class="container">
-    <HeaderComponent />
     <RouterView />
   </div>
   <WhatsappButton />
 </template>
 
-<style src="./assets/main.css" scoped></style>
+<style lang="scss" src="./assets/main.scss" scoped></style>
