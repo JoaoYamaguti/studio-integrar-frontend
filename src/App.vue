@@ -6,9 +6,7 @@ import HeaderComponent from './components/HeaderComponent/HeaderComponent.vue'
 
 <template>
   <HeaderComponent />
-  <div class="container">
-    <RouterView />
-  </div>
+  <RouterView />
   <WhatsappButton />
 </template>
 

@@ -1,6 +1,7 @@
 @use '../../assets/base.scss';
 
 main.about {
+  @extend .container;
   padding: 1rem;
   display: flex;
   flex-flow: column;

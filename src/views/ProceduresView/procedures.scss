@@ -1,4 +1,64 @@
 @use '../../assets/base.scss';
 
 main.procedures {
+  inline-size: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.proceduresList {
+  inline-size: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.procedureCard {
+  padding: 2rem;
+  section {
+    @extend .container;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+  }
+}
+.procedureCard:nth-child(odd) {
+  background-color: var(--color-background);
+}
+.procedureCard:nth-child(even) {
+  background-color: var(--color-background-soft);
+}
+
+.procedureInfo {
+}
+
+.procedureImg {
+  inline-size: 100%;
+  block-size: 20rem;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (width >= 48rem) {
+  /* width >= 768px */
+  .procedureCard {
+    padding: 2rem;
+    section {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+  .procedureCard:nth-child(even) {
+    background-color: var(--color-background-soft);
+    section {
+      flex-flow: row-reverse nowrap;
+    }
+  }
 }

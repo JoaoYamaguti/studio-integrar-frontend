@@ -11,7 +11,7 @@ const unshowMobileMenu = () => {
 
 <template>
   <header>
-    <div class="container">
+    <nav class="container">
       <RouterLink to="/">
         <div class="logo"></div>
       </RouterLink>
@@ -48,7 +48,7 @@ const unshowMobileMenu = () => {
           </ul>
         </label>
       </div>
-    </div>
+    </nav>
   </header>
 </template>
 

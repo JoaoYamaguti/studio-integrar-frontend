@@ -5,9 +5,9 @@ header {
   top: -1px;
   inline-size: 100%;
   block-size: 7rem;
-  border-bottom: solid 1px var(--color-background-soft);
+  border-bottom: solid 1px var(--color-background-mute);
   padding: 1rem;
-  background-color: var(--color-background-soft);
+  background-color: var(--color-background-mute);
   z-index: 1000;
   & .logo {
     inline-size: 5rem;
@@ -23,7 +23,7 @@ header {
     scale: 1.1;
   }
 
-  & div.container {
+  & nav.container {
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -62,7 +62,7 @@ header {
   top: calc(7rem - 2px);
   inline-size: 65vw;
   block-size: calc(100vh - 7rem + 3px);
-  background-color: var(--color-background-soft);
+  background-color: var(--color-background-mute);
   // box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 
   /* border-start-start-radius: 18px;
