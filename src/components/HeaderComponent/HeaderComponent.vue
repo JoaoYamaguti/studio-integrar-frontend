@@ -1,19 +1,24 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { whatsappLink } from '@/Resources/WhatsappLink.ts'
 
 const showMobileMenu = ref(false)
+
+const unshowMobileMenu = () => {
+  showMobileMenu.value = false
+}
 </script>
 
 <template>
   <header>
     <div class="container">
-      <a href="/">
+      <RouterLink to="/">
         <div class="logo"></div>
-      </a>
+      </RouterLink>
       <ul class="desktopMenu">
-        <li><a href="/about">Sobre Nós</a></li>
-        <li><a href="/procedures">Procedimentos</a></li>
-        <li><a href="/schedule">Agendamento</a></li>
+        <li><RouterLink to="/about">Sobre Nós</RouterLink></li>
+        <li><RouterLink to="/procedures">Procedimentos</RouterLink></li>
+        <li><RouterLink to="/schedule">Agendamento</RouterLink></li>
       </ul>
       <div class="mobileMenuIcon">
         <label for="mobileMenuIcon">
@@ -23,16 +28,22 @@ const showMobileMenu = ref(false)
           <div class="thirdBar"></div>
           <ul class="mobileMenu container">
             <li>
-              <a href="/about"><i class="pi pi-briefcase"></i> Sobre Nós</a>
+              <RouterLink to="/about" @click="unshowMobileMenu"
+                ><i class="pi pi-briefcase"></i> Sobre Nós</RouterLink
+              >
             </li>
             <li>
-              <a href="/procedures"><i class="pi pi-wave-pulse"></i> Procedimentos</a>
+              <RouterLink to="/procedures" @click="unshowMobileMenu"
+                ><i class="pi pi-wave-pulse"></i> Procedimentos</RouterLink
+              >
             </li>
             <li>
-              <a href="/schedule"><i class="pi pi-calendar"></i> Agendamento</a>
+              <RouterLink to="/schedule" @click="unshowMobileMenu"
+                ><i class="pi pi-calendar"></i> Agendamento</RouterLink
+              >
             </li>
             <li>
-              <a href="/schedule"><i class="pi pi-whatsapp"></i> Contato</a>
+              <a :href="whatsappLink"><i class="pi pi-whatsapp"></i> Contato</a>
             </li>
           </ul>
         </label>

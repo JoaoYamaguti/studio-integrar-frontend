@@ -2,12 +2,13 @@
 
 header {
   position: sticky;
-  top: 0;
+  top: -1px;
   inline-size: 100%;
   block-size: 7rem;
   border-bottom: solid 1px var(--color-background-soft);
   padding: 1rem;
   background-color: var(--color-background-soft);
+  z-index: 1000;
   & .logo {
     inline-size: 5rem;
     block-size: 5rem;
@@ -58,11 +59,11 @@ header {
 .mobileMenu {
   position: fixed;
   right: 0;
-  top: 7rem;
+  top: calc(7rem - 2px);
   inline-size: 65vw;
-  block-size: calc(100vh - 7rem);
+  block-size: calc(100vh - 7rem + 3px);
   background-color: var(--color-background-soft);
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 
   /* border-start-start-radius: 18px;
   border-start-end-radius: 18px; */
@@ -115,7 +116,7 @@ header {
 }
 #mobileMenuIcon:checked ~ ul.mobileMenu {
   transform: translateX(0%);
-  box-shadow: -150px 1px 0px rgba(0, 0, 0, 0.5);
+  // box-shadow: -300px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .desktopMenu {

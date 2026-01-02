@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { whatsappLink } from '@/Resources/WhatsappLink'
+</script>
 
 <template>
   <div class="whatsappButton">
-    <a href="">
+    <a :href="whatsappLink">
       <i class="pi pi-whatsapp"></i>
     </a>
   </div>

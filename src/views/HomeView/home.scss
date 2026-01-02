@@ -40,17 +40,6 @@
       display: flex;
       flex-flow: column nowrap;
       gap: 1rem;
-
-      & h1 {
-        color: var(--color-primary);
-        font-size: calc(1.8rem + 0.3vw);
-        text-align: center;
-        /* font: var(--font-great-vibes); */
-      }
-      & p {
-        color: var(--color-heading);
-        font-size: calc(1rem + 0.3vw);
-      }
     }
   }
 
@@ -62,15 +51,7 @@
   }
 
   & .operation .infos {
-    & h2 {
-      color: var(--color-primary);
-      font-size: calc(1.5rem + 0.3vw);
-      text-align: start;
-      margin-bottom: 1rem;
-    }
     & p {
-      color: var(--color-heading);
-      font-size: calc(1rem + 0.3vw);
       margin-bottom: 1rem;
     }
   }
@@ -107,12 +88,7 @@
 
   & .infos {
     flex: 1 0 0;
-    & h3 {
-      color: var(--color-primary);
-      font-size: calc(1.2rem + 0.3vw);
-      text-align: start;
-      margin-bottom: 1rem;
-    }
+
     & p {
       color: var(--color-heading);
       font-size: calc(0.8rem + 0.3vw);
@@ -134,9 +110,9 @@
       margin-top: 0;
 
       & .intro {
-        & h1 {
-          text-align: start;
-        }
+        // & h1 {
+        //   text-align: start;
+        // }
       }
     }
     & .operation,

@@ -30,6 +30,11 @@
   --color-secondary: rgb(255, 38, 61);
   --color-secondary-dark: rgb(153, 22, 36);
 
+  --color-linkedin: rgb(10, 102, 194);
+  --color-linkedin-hover: rgb(7, 75, 143);
+  --color-whatsapp: rgb(23, 139, 71);
+  --color-whatsapp-hover: rgb(14, 87, 44);
+
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -99,4 +104,51 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // line-height: 1.2;
+  text-align: center;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: calc(1.8rem + 0.3vw);
+  // text-align: center;
+  /* font: var(--font-great-vibes); */
+}
+h2 {
+  color: var(--color-primary);
+  font-size: calc(1.5rem + 0.3vw);
+  // text-align: start;
+  margin-bottom: 1rem;
+}
+h3 {
+  color: var(--color-primary);
+  font-size: calc(1.2rem + 0.3vw);
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--color-heading);
+  font-size: calc(1rem + 0.3vw);
+}
+
+@media (width >= 48rem) {
+  /* width >= 768px */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // line-height: 1.2;
+    text-align: start;
+  }
 }
