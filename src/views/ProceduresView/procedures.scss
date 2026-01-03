@@ -5,21 +5,29 @@ main.procedures {
   padding-top: 1rem;
   display: flex;
   flex-flow: column nowrap;
-  gap: 1rem;
+  gap: 2rem;
 
   h1 {
     text-align: center;
   }
 }
 
-.proceduresList {
+div.description {
+  @extend .container;
+  padding: 0 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.categoriesList {
   inline-size: 100%;
   display: flex;
   flex-flow: column nowrap;
 }
 
-.procedureCard {
-  padding: 2rem;
+.categorieCard {
+  padding: 1rem;
   section {
     @extend .container;
     padding: 0 1rem;
@@ -28,17 +36,55 @@ main.procedures {
     gap: 1rem;
   }
 }
-.procedureCard:nth-child(odd) {
+.categorieCard:nth-child(odd) {
   background-color: var(--color-background);
 }
-.procedureCard:nth-child(even) {
+.categorieCard:nth-child(even) {
   background-color: var(--color-background-soft);
 }
 
-.procedureInfo {
+.categorieInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  p {
+    font-size: calc(0.9rem + 0.3vw);
+    padding-left: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
 }
 
-.procedureImg {
+.procedureList {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.procedure {
+  border-bottom: solid 1px var(--color-background-soft);
+  padding-bottom: 1rem;
+  p {
+  }
+}
+.procedure:nth-last-child(1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.benefitsList {
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+.indicationsList {
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}
+
+.categorieImg {
   inline-size: 100%;
   block-size: 20rem;
 
@@ -49,14 +95,14 @@ main.procedures {
 
 @media (width >= 48rem) {
   /* width >= 768px */
-  .procedureCard {
+  .categorieCard {
     padding: 2rem;
     section {
       flex-flow: row nowrap;
       justify-content: space-between;
     }
   }
-  .procedureCard:nth-child(even) {
+  .categorieCard:nth-child(even) {
     background-color: var(--color-background-soft);
     section {
       flex-flow: row-reverse nowrap;

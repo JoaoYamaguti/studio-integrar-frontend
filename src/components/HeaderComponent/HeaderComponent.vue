@@ -17,7 +17,7 @@ const unshowMobileMenu = () => {
       </RouterLink>
       <ul class="desktopMenu">
         <li><RouterLink to="/about">Sobre Nós</RouterLink></li>
-        <li><RouterLink to="/procedures">Procedimentos</RouterLink></li>
+        <li><RouterLink to="/procedures">Terapias</RouterLink></li>
         <li><RouterLink to="/schedule">Agendamento</RouterLink></li>
       </ul>
       <div class="mobileMenuIcon">
