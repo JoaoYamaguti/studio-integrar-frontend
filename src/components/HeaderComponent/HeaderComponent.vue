@@ -12,7 +12,7 @@ const unshowMobileMenu = () => {
 <template>
   <header>
     <nav class="container">
-      <RouterLink to="/">
+      <RouterLink to="/" @click="unshowMobileMenu">
         <div class="logo"></div>
       </RouterLink>
       <ul class="desktopMenu">

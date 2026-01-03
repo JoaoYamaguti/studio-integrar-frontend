@@ -4,9 +4,12 @@ header {
   position: sticky;
   top: -1px;
   inline-size: 100%;
-  block-size: 7rem;
+  block-size: 6rem;
   border-bottom: solid 1px var(--color-background-mute);
-  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color-background-mute);
   z-index: 1000;
   & .logo {
@@ -25,6 +28,7 @@ header {
 
   & nav.container {
     margin: auto;
+    padding: 0 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -59,9 +63,9 @@ header {
 .mobileMenu {
   position: fixed;
   right: 0;
-  top: calc(7rem - 2px);
+  top: calc(6rem - 2px);
   inline-size: 65vw;
-  block-size: calc(100vh - 7rem + 3px);
+  block-size: calc(100vh - 6rem + 3px);
   background-color: var(--color-background-mute);
   // box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 

@@ -22,6 +22,7 @@ main.procedures {
   padding: 2rem;
   section {
     @extend .container;
+    padding: 0 1rem;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
