@@ -26,8 +26,8 @@
         </p>
       </div>
       <div class="buttons">
-        <a href="/about">Procedimentos</a>
-        <a href="/schedule">Agendamento</a>
+        <RouterLink to="/procedures">Procedimentos</RouterLink>
+        <RouterLink to="/schedule">Agendamento</RouterLink>
       </div>
     </div>
     <div class="location">
